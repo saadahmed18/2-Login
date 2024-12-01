@@ -7,9 +7,6 @@
   --main-color: #000000;
   --second-color: #ababab;
 }
-body {
-  font-family: "Work Sans", serif;
-}
 .container {
   margin: auto;
   padding: 0 15px;
@@ -28,4 +25,18 @@ body {
   .container {
     width: 750px;
   }
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  padding: 25px;
+}
+header .logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main-color);
 }
