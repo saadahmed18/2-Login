@@ -6,15 +6,11 @@
 :root {
   --main-color: #000000;
   --second-color: #ababab;
+  --border-color: #282828;
 }
 .container {
   margin: auto;
   padding: 0 15px;
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
 }
 @media (min-width: 992px) {
   .container {
@@ -26,11 +22,20 @@
     width: 750px;
   }
 }
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
 a {
   text-decoration: none;
 }
 body {
   font-family: "Poppins", sans-serif;
+}
+img {
+  max-width: 100%;
 }
 header {
   padding: 25px;
@@ -39,4 +44,106 @@ header .logo {
   font-size: 20px;
   font-weight: 600;
   color: var(--main-color);
+}
+.form-and-image .container {
+  display: flex;
+  justify-content: space-between;
+}
+form {
+  width: 505px;
+  border: 2px solid var(--second-color);
+  border-radius: 8px;
+  padding: 45px;
+}
+form .welcome {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+form .title {
+  margin-bottom: 40px;
+}
+form .title h1 {
+  font-size: 31px;
+  font-weight: 500;
+}
+.password {
+  margin: 30px 0 10px 0;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 6px;
+  border: none;
+}
+input[type="text"],
+input[type="password"] {
+  outline: none;
+  border: 0.6px solid var(--border-color);
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.options .check-box {
+  display: flex;
+  align-items: center;
+}
+input[type="checkbox"] {
+  display: block;
+  cursor: pointer;
+}
+.options .check-box label {
+  margin: 0 0 0 8px;
+}
+.options a {
+  font-size: 12px;
+  font-weight: 300;
+  color: #4d4d4d;
+}
+input[type="submit"] {
+  margin: 30px 0 10px 0;
+  cursor: pointer;
+  color: white;
+  background-color: var(--main-color);
+}
+.are-you-have-an-account {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.are-you-have-an-account p {
+  font-weight: 300;
+  color: #7d7d7d;
+}
+.are-you-have-an-account a {
+  display: block;
+  margin-left: 8px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.images {
+  width: 827px;
+}
+
+@media (max-width: 450px) {
+  .form-and-image .container {
+    align-items: center;
+    height: calc(100vh - 80.4px);
+  }
+  form {
+    width: 100%;
+  }
+  .images {
+    display: none;
+  }
 }
