@@ -141,6 +141,8 @@ input[type="submit"] {
   .form-and-image .container {
     align-items: center;
     height: calc(100vh - 80.4px);
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   form {
     width: 100%;
