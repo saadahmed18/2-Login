@@ -39,6 +39,7 @@ img {
 }
 header {
   padding: 25px;
+  max-height: 70px;
 }
 header .logo {
   font-size: 20px;
@@ -47,12 +48,13 @@ header .logo {
 }
 .form-and-image .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-top: 80px;
+  height: calc(100vh - 70px);
 }
 form {
   width: 505px;
+  flex-grow: 1;
   border: 2px solid var(--second-color);
   border-radius: 8px;
   padding: 45px;
@@ -133,21 +135,8 @@ input[type="submit"] {
   font-weight: 600;
   color: var(--main-color);
 }
-.images {
-  width: 827px;
-}
-
-@media (max-width: 450px) {
-  .form-and-image .container {
-    align-items: center;
-    height: calc(100vh - 80.4px);
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  form {
-    width: 100%;
-  }
-  .images {
+@media (max-width: 1200px) {
+  .image {
     display: none;
   }
 }
